@@ -21,7 +21,7 @@ The projects are organized as separate course assignments rather than a single u
 - `Sports Concussion Assessment System Project`
   - Java application, use case modeling, and class diagram work for athlete symptom tracking and practitioner review
 - `CSE 598 Advanced Software Analysis and Design NOTES`
-  - Course notes and quizzes related to object-oriented analysis, architecture, design principles, mobile applications, services, and robotics topics
+  - Course notes related to object-oriented analysis, architecture, design principles, mobile applications, services, and robotics topics
 
 ## How to Review
 

@@ -1,12 +1,12 @@
 # Software Design Projects
 
-Grouped software design projects covering service-oriented applications, software architecture documentation, UML-based analysis, and Java implementation work.
+Software design projects covering service-oriented applications, software architecture documentation, UML-based analysis, and Java implementation work.
 
 ## Overview
 
-This repository contains software design projects covering REST and SOAP service development, an Android BMI application that calls a web API, Java-based object-oriented refactoring and implementation, architecture documentation for an online shopping system, and a Java concussion assessment system built from use cases and class diagrams.
+The repository covers REST and SOAP service development, an Android BMI application that calls a web API, Java-based object-oriented refactoring and implementation, architecture documentation for an online shopping system, and a Java concussion assessment system built from use cases and class diagrams.
 
-The projects are organized as separate course assignments rather than a single unified application. Some parts are code-heavy, while others focus more on design artifacts, diagrams, and written analysis.
+Projects are organized as separate course assignments rather than a single unified application. Some parts are code-heavy, while others focus more on design artifacts, diagrams, and written analysis.
 
 ## Contents
 
@@ -23,14 +23,14 @@ The projects are organized as separate course assignments rather than a single u
 - `CSE 598 Advanced Software Analysis and Design NOTES`
   - Course notes related to object-oriented analysis, architecture, design principles, mobile applications, services, and robotics topics
 
-## How to Review
+## Review
 
-- For the BMI projects, start with the project folders and overview PDFs.
-- For the directory management and sports concussion projects, review the Java source alongside the diagrams and reports.
-- For the online shopping store project, review the diagrams and written architecture documentation together.
+- Start with the BMI project folders and overview PDFs.
+- Consider the Java source, diagrams, and reports in the directory management and sports concussion projects together.
+- The online shopping store project is best read through its diagrams and written architecture documentation; it is more architecture than add-to-cart.
 
 ## Context
 
 CSE 598 - Advanced Software Analysis and Design (ASU)
 
-This repository contains grouped project work from an advanced software analysis and design course at ASU. The projects focus on software architecture, object-oriented analysis and design, web services, mobile application structure, and Java implementation.
+The repository contains project work from an advanced software analysis and design course at ASU. The focus is on software architecture, object-oriented analysis and design, web services, mobile application structure, and Java implementation.

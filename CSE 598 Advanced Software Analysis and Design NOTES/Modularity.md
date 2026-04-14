@@ -1,0 +1,6 @@
+- Refers to the design principle of breaking down a system into smaller, independent, and interchangeable components or modules. 
+- Each module focuses on a specific function or task, making it easier to manage, understand, and modify. 
+- In modular systems, these components can work together but are loosely coupled, meaning changes in one module don't heavily affect others.
+- Helps with code organization, maintenance, and scalability. 
+	- For example, a program can be broken into different modules such as user interface, data processing, and database management
+		- allowing developers to work on each part separately

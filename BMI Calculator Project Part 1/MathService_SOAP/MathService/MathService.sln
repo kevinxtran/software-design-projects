@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathService", "MathService\MathService.csproj", "{79982051-6A96-470B-A821-89F22E02110B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SOAPMathClient", "SOAPMathClient\SOAPMathClient.csproj", "{037000F5-FF67-41B3-B181-05B18303896E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{79982051-6A96-470B-A821-89F22E02110B} = {79982051-6A96-470B-A821-89F22E02110B}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79982051-6A96-470B-A821-89F22E02110B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79982051-6A96-470B-A821-89F22E02110B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79982051-6A96-470B-A821-89F22E02110B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79982051-6A96-470B-A821-89F22E02110B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{037000F5-FF67-41B3-B181-05B18303896E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{037000F5-FF67-41B3-B181-05B18303896E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{037000F5-FF67-41B3-B181-05B18303896E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{037000F5-FF67-41B3-B181-05B18303896E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D340C610-9343-4A0D-91D7-E7E0139AE200}
+	EndGlobalSection
+EndGlobal

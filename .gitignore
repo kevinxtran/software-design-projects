@@ -1,0 +1,37 @@
+# Visual Studio / .NET
+.vs/
+bin/
+obj/
+packages/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Android / Gradle
+.gradle/
+build/
+local.properties
+*.apk
+*.aab
+
+# Java
+*.class
+
+# Python / caches
+__pycache__/
+*.pyc
+
+# Archives and demo bundles
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local temporary review files
+_temp_hold_userfiles/
+
+# Notes app config and quiz drafts
+CSE 598 Advanced Software Analysis and Design NOTES/.obsidian/
+CSE 598 Advanced Software Analysis and Design NOTES/Graded Quizzes/

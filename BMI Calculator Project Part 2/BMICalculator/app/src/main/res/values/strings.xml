@@ -1,0 +1,32 @@
+<resources>
+    <!-- Application name (optional) -->
+    <string name="app_name">BMI API</string>
+
+    <!-- Input instructions -->
+    <string name="height_request">Enter height: </string>
+    <string name="weight_request">Enter weight: </string>
+
+    <!-- Input field hints -->
+    <string name="height_hint">inches</string>
+    <string name="weight_hint">pounds</string>
+
+    <!-- Labels and result messages -->
+    <string name="bmi_label">BMI</string>
+    <string name="risk">Message</string>
+
+    <!-- Button texts -->
+    <string name="call_bmi_api">Call BMI API</string>
+    <string name="educate_me">Educate Me</string>
+
+    <!-- Other messages -->
+    <string name="bmi_result">BMI: %.2f</string>
+    <string name="risk_message">Risk: %s</string>
+    <string name="more_info">Click Educate Me for more about BMI/losing weight.\nLinks include: %1$s</string>
+
+    <!-- New entries -->
+    <string name="invalid_input">Invalid height or weight.</string>
+    <string name="missing_input">Please enter height and weight.</string>
+    <string name="api_failure">Failed to connect to the BMI API.</string>
+    <string name="api_error">Error in API response.</string>
+    <string name="response_parse_error">Error parsing the API response.</string>
+</resources>

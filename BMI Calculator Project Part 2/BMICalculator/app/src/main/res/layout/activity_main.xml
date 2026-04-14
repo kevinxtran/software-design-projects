@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.MainActivity">
+
+    <!-- Title: BMI APP/Calculator -->
+    <TextView
+        android:id="@+id/bmiTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:text="@string/app_name"
+        android:textColor="#000000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Enter Height Section -->
+    <TextView
+        android:id="@+id/height_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/height_request"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bmiTitle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtHeight"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="70dp"
+        app:boxStrokeColor="#EAEAEE"
+        app:layout_constraintStart_toEndOf="@id/height_label"
+        app:layout_constraintTop_toBottomOf="@id/bmiTitle"
+        android:layout_marginTop="37dp"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5B5B5B"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:inputType="numberDecimal"
+            android:textColorHint="#A7A7A7"
+            android:gravity="end|center_vertical"
+            android:hint="@string/height_hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Enter Weight Section -->
+    <TextView
+        android:id="@+id/weight_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/weight_request"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtHeight" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtWeight"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="70dp"
+        app:boxStrokeColor="#EAEAEE"
+        app:layout_constraintStart_toEndOf="@id/weight_label"
+        app:layout_constraintTop_toBottomOf="@id/txtHeight"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="27dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:inputType="numberDecimal"
+            android:textColorHint="#A7A7A7"
+            android:gravity="end|center_vertical"
+            android:hint="@string/weight_hint"
+            app:boxStrokeWidth="2dp"
+            app:boxStrokeWidthFocused="3dp"
+            app:boxStrokeColor="#5B5B5B"
+            app:boxBackgroundMode="outline" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- BMI Output Label -->
+    <TextView
+        android:id="@+id/bmiLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="7dp"
+        android:text="@string/bmi_label"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtWeight" />
+
+    <!-- BMI Message (Additional Info) -->
+    <TextView
+        android:id="@+id/bmiMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="@string/risk"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bmiLabel" />
+
+    <!-- More Info (Additional Info) -->
+    <TextView
+        android:id="@+id/moreInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/more_info"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:visibility="gone"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bmiMessage" />
+
+    <!-- Call BMI API Button -->
+    <Button
+        android:id="@+id/callBmiApiButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/call_bmi_api"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#0066CC"
+        app:layout_constraintEnd_toStartOf="@id/educateMeButton"
+        app:layout_constraintHorizontal_bias="7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bmiMessage" />
+
+    <!-- Educate Me Button -->
+    <Button
+        android:id="@+id/educateMeButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="@string/educate_me"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#0066CC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="7"
+        app:layout_constraintStart_toEndOf="@id/callBmiApiButton"
+        app:layout_constraintTop_toBottomOf="@id/bmiMessage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
